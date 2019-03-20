@@ -1,12 +1,16 @@
-import { RECEIVE_USERS } from "../actions/users"
-import { LOG_USER } from "../actions/users"
+import {CHOOSE_USER, RECEIVE_USERS} from "../actions/users"
 
-export default function users (state = null, action) { // Initialise state to null because if no user received, nothing to show.
+export default function users (state = null, action) {
     switch (action.type) {
         case RECEIVE_USERS:
+            return { // Important: reducers are always asyn.
+                ...state,
+                ...action.users // Important: users reducers only add things related with users.
+            }
+        case CHOOSE_USER:
             return {
                 ...state,
-                ...action.users
+                userChoosed: action.userChoosed
             }
         default:
             return state
