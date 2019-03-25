@@ -1,6 +1,8 @@
 @import "login";
 @import "header";
+@import "nav";
 @import "home";
+@import "question";
 
 .app-cp {
   display: flex;
@@ -9,6 +11,7 @@
 }
 .user-avatar {
   width: 25px;
+  display: block;
 }
 
 // Utils:

@@ -1,0 +1,28 @@
+@import "../mixins";
+// Variables:
+$question-vert-mov: 7px;
+$question-hor-mov: 3px;
+
+.question-cp {
+  margin-bottom: 1em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: solid 1px rgb(200,200,200);
+  width: 100%;
+  padding: $question-vert-mov $question-hor-mov;
+  &__user {
+    margin-bottom: $question-vert-mov;
+    .user-avatar {
+      margin: 0 auto;
+    }
+  }
+  &__question {
+    text-align: center;
+    padding: 0 $question-hor-mov;
+  }
+  &__button {
+    margin-top: $question-vert-mov;
+    @include button-perso();
+  }
+}

@@ -1,3 +1,25 @@
-.home-cp {
+@import "../mixins";
+// Variables:
+$home-width: 320px;
+$home-horiz-mov: 10px;
+$home-vert-mov: 17px;
 
+.home-cp {
+  width: $home-width;
+  border: solid 1px rgb(150,150,150);
+  padding:  $home-horiz-mov $home-horiz-mov;
+  margin-top: $home-vert-mov;
+  &__questions-type {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: $home-vert-mov;
+    button {
+      @include button-perso();
+    }
+  }
+  &__questions-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 }

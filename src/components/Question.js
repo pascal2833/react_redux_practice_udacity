@@ -5,16 +5,16 @@ class Question extends Component {
     render() {
         return (
             <div className="question-cp">
-                <div className="question-c__user">
+                <div className="question-cp__user">
                     <img className="user-avatar" src={`${this.props.userAvatar}`} alt={`${this.props.authorId}-avatar`}/>
                     {this.props.userName}
                 </div>
-                <div className="question-c__question">
+                <div className="question-cp__question">
                     Would you rather:
                     <br/>
                     {this.props.text}
                 </div>
-                <button className="question-c__question">View Poll</button>
+                <button className="question-cp__button">View Poll</button>
             </div>
         )
     }

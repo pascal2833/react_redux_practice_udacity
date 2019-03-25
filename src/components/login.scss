@@ -1,6 +1,10 @@
+@import "../mixins";
 .login-cp {
   &__form {
     display: flex;
     justify-content: space-around;
+    button {
+      @include button-perso();
+    }
   }
 }

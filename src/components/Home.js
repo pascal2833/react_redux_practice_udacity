@@ -22,33 +22,30 @@ class Home extends Component {
     }
     render () {
         return (
-                <div className="home-cp">
+                <div>
                 {this.props.userChoosed
-                    ? <div>
+                    ? <div className="home-cp">
                         <div className='home-cp__questions-type'>
                             <button onClick={this.chooseUnAnsweredQuestions}>Unanswered question</button>
                             <button onClick={this.chooseAnsweredQuestions}>Answered question</button>
                         </div>
-                        <div className='home-cp__questions-list'>
-                            {this.state.showUnansweredQuestions === true
-                                ? <div>
-                                    { this.props.unansweredQuestions.map(question => (
-                                        <div key={question.idQuestion}>
-                                            <Question
-                                                authorId={question.author}
-                                                text={question.textQuestion}
-                                            >
-                                            </Question>
-                                        </div>
-                                        )
+                        {this.state.showUnansweredQuestions === true
+                            ? <div className='home-cp__questions-list'>
+                                { this.props.unansweredQuestions.map(question => (
+                                    <Question
+                                        key={question.idQuestion}
+                                        authorId={question.author}
+                                        text={question.textQuestion}
+                                    >
+                                    </Question>
                                     )
-                                    }
-                                </div>
-                                : <div>
-                                    Ans
-                                </div>
-                            }
-                        </div>
+                                )
+                                }
+                            </div>
+                            : <div>
+                                Ans
+                            </div>
+                        }
                     </div>
                     : <Login/>
                 }

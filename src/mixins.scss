@@ -1,0 +1,13 @@
+$botton-paddings: .3em 1em !default;
+@mixin button-perso ($color: white, $backgroundC: rgb(150,150,150), $backgroundC-hov: rgb(50,50,50), $paddings: $botton-paddings, $borderR: .3em, $font-size: .9em) {
+  color: $color;
+  padding: $paddings;
+  border-radius: .3em;
+  font-size: $font-size;
+  cursor: pointer;
+  border-style: none;
+  background-color: $backgroundC;
+  &:hover {
+    background-color: $backgroundC-hov;
+  }
+}
