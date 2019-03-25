@@ -21,7 +21,7 @@ class App extends Component {
                     <div>
                         {this.props.loadingUsersAndQuestions === true
                             ? null
-                            : <div> {/*Now, we don't want to show component but Route (ie: single page app)*/}
+                            : <div className="app-cp"> {/*Now, we don't want to show component but Route (ie: single page app)*/}
                                 <h1>React App</h1>
                                 <Header></Header>
                                 <Route path='/' exact component={Home}></Route>

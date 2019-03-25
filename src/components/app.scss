@@ -1,0 +1,17 @@
+@import "login";
+@import "header";
+@import "home";
+
+.app-cp {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.user-avatar {
+  width: 25px;
+}
+
+// Utils:
+.pointer-cursor {
+  cursor: pointer;
+}

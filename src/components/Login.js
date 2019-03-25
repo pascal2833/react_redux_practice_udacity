@@ -33,9 +33,9 @@ class Login extends Component {
 
     render() {
         return (
-            <div>
+            <div className="login-cp">
                 <h3>Choose an user to use the application</h3>
-                <form onSubmit={this.handleSubmit}>
+                <form onSubmit={this.handleSubmit} className="login-cp__form">
                     <select onChange={this.handleSelect}>
                         <option value="">Select User</option>
                         {Object.keys(this.props.users).map(userId => (

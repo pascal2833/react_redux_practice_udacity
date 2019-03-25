@@ -1,4 +1,4 @@
-const avatarsFolder = '../assets/users_avatar/'
+const avatarsFolder = 'assets/users_avatar/' // To put in public folder.
 let users = {
     sarahedo: {
         id: 'sarahedo',

@@ -1,0 +1,22 @@
+@import "nav";
+.header-cp {
+  display: flex;
+  height: 50px;
+  width: 100%;
+  justify-content: space-around;
+  background-color: aliceblue;
+  align-items: center;
+  &__user-info {
+    display: flex;
+    justify-content: space-between;
+    height: 50px;
+    align-items: center;
+    &__items {
+      margin-left: 1em;
+    }
+  }
+  &__nav {
+    display: flex;
+    justify-content: space-between;
+  }
+}

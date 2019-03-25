@@ -3,10 +3,10 @@ import React, { Component } from 'react'
 class Nav extends Component {
     render () {
         return (
-            <div>
-                <span>Home</span>
-                <span>New question</span>
-                <span>Leader Board</span>
+            <div className="header-cp__nav nav-cp">
+                <div className="nav-cp__title pointer-cursor">Home</div>
+                <div className="nav-cp__title pointer-cursor">New question</div>
+                <div className="nav-cp__title pointer-cursor">Leader Board</div>
             </div>
         )
     }

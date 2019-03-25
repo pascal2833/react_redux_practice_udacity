@@ -22,14 +22,14 @@ class Home extends Component {
     }
     render () {
         return (
-            <div>
+                <div className="home-cp">
                 {this.props.userChoosed
                     ? <div>
-                        <div className='question-type-container'>
+                        <div className='home-cp__questions-type'>
                             <button onClick={this.chooseUnAnsweredQuestions}>Unanswered question</button>
                             <button onClick={this.chooseAnsweredQuestions}>Answered question</button>
                         </div>
-                        <div className='questions-list'>
+                        <div className='home-cp__questions-list'>
                             {this.state.showUnansweredQuestions === true
                                 ? <div>
                                     { this.props.unansweredQuestions.map(question => (
