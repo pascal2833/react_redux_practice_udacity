@@ -1,0 +1,9 @@
+.header-cp {
+  display: flex;
+  height: 50px;
+  justify-items: center;
+  width: 100%;
+  justify-content: space-around;
+  background-color: aliceblue; }
+
+/*# sourceMappingURL=header.css.map */

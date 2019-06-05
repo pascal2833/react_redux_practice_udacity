@@ -1,0 +1,12 @@
+.app-container {
+  display: flex;
+  align-items: center;
+  flex-direction: column; }
+  .app-container .login-cp__form {
+    display: flex;
+    justify-content: space-around; }
+
+.user-avatar {
+  width: 25px; }
+
+/*# sourceMappingURL=app.css.map */
